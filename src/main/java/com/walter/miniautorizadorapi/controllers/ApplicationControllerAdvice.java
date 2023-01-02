@@ -2,6 +2,7 @@ package com.walter.miniautorizadorapi.controllers;
 
 import com.walter.miniautorizadorapi.exceptions.*;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -22,7 +23,7 @@ public class ApplicationControllerAdvice {
     }
 
     @ExceptionHandler(CartaoInexistenteException.class)
-    @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     public ApiErros handleCartaoInexistenteException(CartaoInexistenteException ex) {
         return new ApiErros(ex);
     }
