@@ -17,8 +17,11 @@ import javax.validation.Valid;
 @ApiModel("Trasacao API")
 public class TransacaoController {
 
-    @Autowired
     private CartaoService cartaoService;
+
+    public TransacaoController(CartaoService cartaoService) {
+        this.cartaoService = cartaoService;
+    }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
