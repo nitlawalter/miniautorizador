@@ -1,5 +1,5 @@
-# miniautorizador
-Autorizador de transações de cartões de benefícios
+# Projeto Miniautorizador
+Autorizador de transações de cartões de benefícios.
 
 # Execução do Projeto
 
@@ -18,3 +18,7 @@ Autorizador de transações de cartões de benefícios
     `saldo` DECIMAL(10,3) NOT NULL DEFAULT 500.00,
     PRIMARY KEY (`id`))
   COMMENT = '					';
+  
+  # Testes via SWAGGER
+  
+  - localhost:8080/swagger-ui/index.html
