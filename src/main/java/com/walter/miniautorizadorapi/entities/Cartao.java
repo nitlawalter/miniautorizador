@@ -1,15 +1,12 @@
 package com.walter.miniautorizadorapi.entities;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.ColumnDefault;
 
+import javax.persistence.*;
 import java.math.BigDecimal;
-import java.util.Optional;
 
 @Data
 @Builder
