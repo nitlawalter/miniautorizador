@@ -18,6 +18,9 @@ Autorizador de transações de cartões de benefícios.
     `saldo` DECIMAL(10,3) NOT NULL DEFAULT 500.00,
     PRIMARY KEY (`id`))
   COMMENT = '					';
+
+  ALTER TABLE `miniautorizador`.`cartao`
+  ADD COLUMN `versao` INT NULL AFTER `saldo`; 
   
   # Testes via SWAGGER
   
