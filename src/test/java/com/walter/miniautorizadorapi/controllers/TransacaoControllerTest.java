@@ -31,7 +31,7 @@ import java.util.Optional;
 @AutoConfigureMockMvc
 class TransacaoControllerTest {
 
-    static String API = "/api/transacoes";
+    static String API = "/transacoes";
 
     @Autowired
     MockMvc mvc;

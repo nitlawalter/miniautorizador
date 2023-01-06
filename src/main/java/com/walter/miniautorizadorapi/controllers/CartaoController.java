@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 
 
 @RestController
-@RequestMapping("/api/cartoes")
+@RequestMapping("/cartoes")
 @Api("Cartao API")
 public class CartaoController {
     private ModelMapper modelMapper = new ModelMapper();

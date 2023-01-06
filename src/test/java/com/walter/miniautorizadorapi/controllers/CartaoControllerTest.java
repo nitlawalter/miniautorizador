@@ -35,7 +35,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @AutoConfigureMockMvc
 class CartaoControllerTest {
 
-    static String API = "/api/cartoes";
+    static String API = "/cartoes";
 
     @Autowired
     MockMvc mvc;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/api/transacoes")
+@RequestMapping("/transacoes")
 @ApiModel("Trasacao API")
 public class TransacaoController {
 
