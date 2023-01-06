@@ -30,6 +30,9 @@ public class Cartao {
     @Column
     private BigDecimal saldo;
 
+    @Version
+    private int versao;
+
     public static boolean isCartaoInvalido(Cartao cartao) {
         return cartao == null || cartao.getId() == null;
     }
